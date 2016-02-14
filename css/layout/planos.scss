@@ -1,0 +1,85 @@
+/** Planos **/
+.planos {
+  background: $color-second;
+}
+
+.planos h2 {
+  color: #fff;
+}
+
+.plano {
+  background: white;
+  width: 18em;
+  display: inline-block;
+  margin: 1em 0 0 1.4em;
+  padding-bottom: 2em;
+}
+
+.plano:hover {
+  background: #dedede;
+}
+
+.plano h3 {
+  color: #fff;
+  font-size: 1.8em;
+  background: $color-default;
+  text-align: center;
+  height: 2em;
+  padding-top: .6em;
+  margin-top: 0;
+}
+
+.plano div {
+  text-align: center;
+  color: $color-default;
+  font-size: 2.75em;
+}
+
+.itens-plano {
+  padding-left: 1.2em;
+
+  li {
+    font-size: 1em;
+    list-style: none;
+    border-bottom: 1px solid #acacac;
+    padding: .5em;
+    width: 14.8em;
+
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  span {
+    float: right;
+  }
+}
+
+.plano button {
+  background: $color-default;
+  border: 0;
+  color: #fff;
+  width: 210px;
+  height: 38px;
+  font-size: 1.2em;
+  @include border-radius(0.3em);
+  //@extend %box-shadow;
+  @include box-shadow(0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3));
+  margin-left: 2em;
+}
+
+@include all-sprite-sprites;
+.sprite-icone-ok, .sprite-icone-x {
+  //background: url(../imagens/sprite-s1e035a9ecf.png) no-repeat;
+  width: 18px;
+  height: 18px;
+}
+/*
+.icone-check {
+  background-position: 0 0;
+}
+
+.icone-x {
+  background-position: 0 -24px;
+}
+*/
